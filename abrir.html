@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ale bonita</title>
+    <style>
+        .body{
+            background-color: bisque;
+            text-align: center;
+        }
+
+        .body__title{
+            color:blueviolet;
+        }
+
+        .body{
+            width: 100%;
+            border-radius: 50%;
+
+        }
+
+
+    </style>
+</head>
+<body class="body">
+    <h1 class="body__title">Hola, tu nombre es Alejandra?</h1>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVUXHAJ76OSBd1YCokrDdgJPIrHrvbwRyIU_jPlAClccuvJpIGubCAg5EYYIPFhJmWeYtvDtso_wyMZ87Gy6b-wYyrktCDKilwD30AhEp3g4eluUxrIeESgS1dXv7-WSa0O3Cpw6n8iMEyXZURsBHtoXGKRVXWMdRE2HWjnKzyUcODnTK18E8xKBEp7yI/s320/Imagen%20de%20WhatsApp%202023-12-07%20a%20las%2017.13.17_2045e72d.jpg" 
+         alt="fotoAle" class="body__img"/>
+         <br></br>
+    <button id="yes">Siiii😄</button>
+    <button id="no">No😟</button>
+
+    <script>
+        const botonSi = document.getElementById('yes');
+        const botonNo = document.getElementById('no');
+
+        const eresHermosa = () => {
+            alert('🌻 Nunca me cansaré de decirte lo hermosa que eres🌻');
+            alert('😇 No solo eres hermosa, tienes un corazón muy bonito 😇');
+            alert('😊 Y por si fuera poco, eres la chica Biker más guapa del mundooo 😊');
+            alert('ERES TODO ESTO Y MÁS 😊');
+            location.href = 'https://www.youtube.com/watch?v=a3hOeU7w59o';
+        }
+
+        const moverBotonNo = () => {
+            botonNo.style.position = 'absolute';
+            botonNo.style.top = (Math.random()* window.innerHeight) + 'px';
+            botonNo.style.top = (Math.random()* window.innerWidth) + 'px';
+        }
+
+        botonSi.addEventListener('click', eresHermosa);
+        botonNo.addEventListener('mouseover', moverBotonNo);
+    </script>
+
+</body>
+</html>
